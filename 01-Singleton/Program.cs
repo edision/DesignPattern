@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Singleton
 {
@@ -6,10 +7,10 @@ namespace Singleton
   {
     static void Main(string[] args)
     {
-      SingletonV1.Instance.Info();
-      SingletonV1.Instance.Info();
-      SingletonV1.Instance.Info();
-      SingletonV1.Instance.Info();
+      Task.Run(() => SingletonWithLock.Instance);
+      Task.Run(() => SingletonWithLock.Instance);
+      Task.Run(() => SingletonWithLock.Instance);
+      Task.Run(() => SingletonWithLock.Instance);
 
       Console.Read();
     }
