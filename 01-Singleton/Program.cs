@@ -2,11 +2,16 @@
 
 namespace Singleton
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      SingletonV1.Instance.Info();
+      SingletonV1.Instance.Info();
+      SingletonV1.Instance.Info();
+      SingletonV1.Instance.Info();
+
+      Console.Read();
     }
+  }
 }
