@@ -4,7 +4,9 @@
 #region using
 
 using System;
+using System.Text;
 using System.Threading.Tasks;
+using Singleton.SigletonCounter;
 
 #endregion
 
@@ -14,11 +16,11 @@ namespace Singleton
     {
         public static void Main(string[] args)
         {
-            Task.Run(() => SingletonWithLock.Instance);
-            Task.Run(() => SingletonWithLock.Instance);
-            Task.Run(() => SingletonWithLock.Instance);
-            Task.Run(() => SingletonWithLock.Instance);
+            Console.OutputEncoding = Encoding.UTF8;// .Net Core的BUG，暂时只能手动设置下。
 
+            CounterMultiThread cmt = new CounterMultiThread();
+            cmt.Start();
+            
             Console.Read();
         }
     }
