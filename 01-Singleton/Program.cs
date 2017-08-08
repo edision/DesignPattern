@@ -1,18 +1,25 @@
-﻿using System;
+﻿// 创建人       吴剑超
+// 创建时间 2017-08-06 18:47
+
+#region using
+
+using System;
 using System.Threading.Tasks;
+
+#endregion
 
 namespace Singleton
 {
-  class Program
-  {
-    static void Main(string[] args)
+    public class Program
     {
-      Task.Run(() => SingletonWithLock.Instance);
-      Task.Run(() => SingletonWithLock.Instance);
-      Task.Run(() => SingletonWithLock.Instance);
-      Task.Run(() => SingletonWithLock.Instance);
+        public static void Main(string[] args)
+        {
+            Task.Run(() => SingletonWithLock.Instance);
+            Task.Run(() => SingletonWithLock.Instance);
+            Task.Run(() => SingletonWithLock.Instance);
+            Task.Run(() => SingletonWithLock.Instance);
 
-      Console.Read();
+            Console.Read();
+        }
     }
-  }
 }
