@@ -16,11 +16,11 @@ namespace Singleton
     {
         public static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;// .Net Core的BUG，暂时只能手动设置下。
+            // Console.OutputEncoding = Encoding.UTF8;// .Net Core的BUG，暂时只能手动设置下。
 
             CounterMultiThread cmt = new CounterMultiThread();
             cmt.Start();
-            
+
             Console.Read();
         }
     }

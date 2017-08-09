@@ -6,8 +6,23 @@
     {
       "taskName": "build",
       "command": "dotnet",
-      "type": "shell",
+      "type": "process",
       "group": "build",
+      "args": [
+        "build"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "taskName": "clean",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "clean"
+      ],
       "presentation": {
         "reveal": "silent"
       },
