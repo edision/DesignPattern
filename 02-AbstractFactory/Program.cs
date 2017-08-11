@@ -6,7 +6,15 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var factory = Calculator.Service.AbstractFactory.GetInstance();
+
+            var tax = factory.CreateTax();
+            tax.Calculate();
+
+            var bonus = factory.CreateBonus();
+            bonus.Calculate();
+
+            Console.Read();
         }
     }
 }
