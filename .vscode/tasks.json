@@ -7,7 +7,7 @@
       "taskName": "build",
       "command": "dotnet",
       "type": "process",
-      "group": "build",
+      "group": "build",     
       "args": [
         "build"
       ],
