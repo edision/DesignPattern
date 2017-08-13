@@ -39,17 +39,17 @@
 
 ### 逻辑模型：
 
-![逻辑模型](images/pic033.jpg)
+![逻辑模型](images/PIC033.jpg)
 
 ### 物理模型：
 
-![物理模型](images/pic034.jpg)
+![物理模型](images/PIC034.jpg)
 
 ### 生活中的例子
 
 抽象工厂的目的是要提供一个创建一系列相关或相互依赖对象的接口，而不需要指定它们具体的类。这种模式可以汽车制造厂所使用的金属冲压设备中找到。这种冲压设备可以制造汽车车身部件。同样的机械用于冲压不同的车型的右边车门、左边车门、右前挡泥板、左前挡泥板和引擎罩等等。通过使用转轮来改变冲压盘，这个机械产生的具体类可以在三分钟内改变。
 
-![生活中的例子](images/pic035.jpg)
+![生活中的例子](images/PIC035.jpg)
 
 ### 抽象工厂之新解
 
@@ -81,7 +81,7 @@
 
 根据上面的分析，为Softo系统建模如下：
 
-![](images/pic036.jpg) 
+![](images/PIC036.jpg) 
 
 则业务规则Service类的代码如下：
 ```cs
@@ -153,7 +153,7 @@ namespace ChineseSalary
 
 根据前面为中国企业建模经验，我们仅仅将ChineseTax、ChineseBonus修改为AmericanTax、AmericanBonus。 修改后的模型如下：
 
-![](images/pic037.jpg)
+![](images/PIC037.jpg)
 
 则业务规则Service类的代码如下：
 ```cs
@@ -250,7 +250,7 @@ namespace AmericanSalary
 
 一个可以立即想到的做法就是在系统中保留所有业务规则模型，即保留中国和美国企业工资运算规则。
 
-![](images/pic038.jpg)
+![](images/PIC038.jpg)
 
 通过保留中国企业和美国企业的业务规则模型，如果该系统在美国企业和中国企业之间切换时，我们仅仅需要修改Caculator类即可。
 
@@ -262,7 +262,7 @@ namespace AmericanSalary
 
 我们发现不论是中国企业还是美国企业，他们的业务运规则都采用同样的计算接口。 于是很自然地想到建立两个业务接口类Tax，Bonus，然后让AmericanTax、AmericanBonus和ChineseTax、ChineseBonus分别实现这两个接口， 据此修正后的模型如下：
 
-![](images/pic039.jpg) 
+![](images/PIC039.jpg) 
 
 此时客户端代码如下：
 
@@ -389,7 +389,7 @@ namespace FactorySalary
 
 解决方案是增加一个抽象工厂类AbstractFactory，增加一个静态方法，该方法根据一个配置文件(App.config或者Web.config) 一个项(比如factoryName)动态地判断应该实例化哪个工厂类，这样，我们就把移植工作转移到了对配置文件的修改。修改后的模型和代码：
 
-![](images/pic040.jpg) 
+![](images/PIC040.jpg) 
 
 抽象工厂类的代码如下：
 
