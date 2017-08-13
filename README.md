@@ -7,7 +7,7 @@
 * 第Ⅱ部分 创建型模式篇
     * [第1章 单件模式（Single Pattern）](01-Singleton/README.md)
     * [第2章 抽象工厂模式（Abstract Factory）](02-AbstractFactory/README.md) 
-    * 第3章 建造者模式（Builder Pattern） 
+    * [第3章 建造者模式（Builder Pattern）](03-Builder/README.md)
     * 第4章 工厂方法（Factory Method） 
     * 第5章 原型模式（Protype Pattern） 
     * 第6章 创建型模式专题总结 
