@@ -1,3 +1,4 @@
+# 建造者模式（Builder Pattern）
 - [建造者模式（Builder Pattern）](#建造者模式（builder-pattern）)
     - [概述](#概述)
     - [意图](#意图)
@@ -15,7 +16,6 @@
     - [应用场景](#应用场景)
     - [总结](#总结)
 
-# 建造者模式（Builder Pattern）
 
 ## 概述
 

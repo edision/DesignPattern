@@ -1,3 +1,5 @@
+# 抽象工厂模式（Abstract Factory）
+
 - [抽象工厂模式（Abstract Factory）](#抽象工厂模式（abstract-factory）)
     - [概述](#概述)
     - [意图](#意图)
@@ -24,7 +26,6 @@
         - [应用场景](#应用场景)
     - [总结](#总结)
 
-# 抽象工厂模式（Abstract Factory）
 
 ## 概述
 
